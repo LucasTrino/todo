@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Docs Externos -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Fim Docs Externos-->
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+    <title>To-Do</title>
+</head>
+
+<body>
+
+    <div class="task_wppr">
+        <div class="search_box">
+            <form action="">
+                <input type="text" name="tarefa" id="tarefa" class="search_box_textInput" placeholder="Nova Tarefa...">
+            </form>
+        </div>
+
+        <div class="task_box">
+            <div class="task_box_list">
+                <div class="task_box_msg">
+                    <img src="img/404.png" alt="Nada Encontrado" class="task_box_img">
+                    <span class="task_box_txt">Não há nenhuma tarefa ainda...</span>
+                </div>
+                <!-- Template -->
+                <div class="task hide template-js">
+                    <a href="#" class="select_check"><i class="material-icons check_icon-invisible">check</i></a>
+                    <span class="task_title">Titulo da tarefa</span>
+                    <a href="#" class="btn_delete"><i class="material-icons">delete</i></a>
+                </div>
+                <!-- Fim Template-->
+            </div>
+            <div class="task_box_footer">
+                <span class="task_box_counter">0 tarefas</span>
+                <nav class="task_box_nav">
+                    <a href="#" class="option -select all-js">Todos</a>
+                    <a href="#" class="option done-js">Feitos</a>
+                    <a href="#" class="option toDone-js">Fazer</a>
+                </nav>
+                <a href="#" class="task_box_btn">Limpar</a>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+
+</body>
+
+</html>

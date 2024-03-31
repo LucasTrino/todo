@@ -1,0 +1,233 @@
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    background-color: #181824;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.task_wppr {
+    width: 33%;
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    transform: translateX(-50%);
+    margin-top: 30px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.search_box {
+    width: 100%;
+    height: 4vw;
+    border-radius: 5px 5px 0 0;
+    background-color: #25273c;
+    border-bottom: 1px solid #36384d;
+    padding: 0.8rem;
+}
+
+.search_box_textInput {
+    width: 100%;
+    border: none;
+    padding: .4rem .8rem;
+    color:#fff;
+    background-color: transparent;
+    font-size: 0.9rem;
+}
+
+.task_box {
+    width: 100%;
+    height: 30vw;
+    background-color:#25273c;
+    border-radius: 0 0 5px 5px;
+    position: relative;
+    overflow: hidden;
+}
+
+.task_box_list {
+    width: 100%;
+    height: 89%;
+    position: relative;
+    overflow: auto;
+}
+
+.task_box_msg {
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #53556d;
+    transition: all ease-in-out .3s;
+}
+
+.task_box_msg .task_box_img {
+    display: block;
+    margin: auto;
+}
+
+.task_box_msg .task_box_txt {
+    display: block;
+    text-align: center;
+    margin-top: 1.3rem;
+}
+
+.task_box_footer {
+    width: 100%;
+    position: absolute;
+    padding: 1rem;
+    bottom: 0;
+    border-top: 1px solid #36384d;
+    color: #53556d;
+    font-size: 0.8rem;
+}
+
+.task_box_footer > a {
+    text-decoration: none;
+	color: #53556d;
+}
+
+.task_box_nav {
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.option {
+    padding: .5rem .5rem;
+    font-weight: bold;
+    transition: all ease-in-out .3s;
+    color: #53556d;
+    position: relative;
+}
+
+.option:hover {
+    color: #5777bc;
+}
+
+.-select {
+    color: #5777bc !important;
+}
+
+.-select::after {
+    display: inline-block;
+    content: " ";
+    width: 5px;
+    height: 5px;
+    background-color: #5777bc;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 84%;
+    transition: all linear .3s;
+}
+
+.task_box_btn {
+    position: absolute;
+    right: 1rem;
+    transition: all linear .3s;
+    color: rgba(255, 0, 0, 0.5) !important;
+    font-weight: bold;
+}
+
+.task_box_btn:hover {
+    color: rgba(255, 0, 0, 0.7) !important;
+}
+
+.task {
+    color: #b8bad3;
+    padding: 16px 25px;
+    border-bottom: 1px solid #36384d;
+    font-size: 1rem;
+    position: relative;
+    cursor: pointer;
+    transition: all linear .5s;
+}
+
+.task_title {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.btn_delete {
+    color: #53556d;
+    font-weight: bold;
+    float: right;
+    transform: scale(.8);
+    visibility: hidden;
+    transition: all ease-in-out .2s;
+}
+
+.btn_delete:hover {
+    color: rgba(255, 0, 0, 0.6);
+}
+
+.task:hover .btn_delete {
+    visibility: visible;
+}
+
+a[class^='select_check'] {
+    width: 19px;
+    height: 19px;
+    padding: 0;
+    display: inline-block;
+    border: 1px solid #53556d;
+    border-radius: 50%;
+    color: #53556d;
+    position: relative;
+    transition: all ease-in-out .3s;
+}
+
+.select_check-done {
+    background-color: rgba(87, 119, 188);
+    border: 1px solid rgba(87, 119, 188);   
+}
+
+.select_check:hover {
+    background-color: rgba(87, 119, 188, 0.5);
+    border: 1px solid rgba(87, 119, 188, 0.5);
+}
+
+a[class^='select_check'] i {
+    font-size: .8rem;
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    color: #fff;
+    transform: scale(.8);
+    transition: all linear .2s;
+}
+
+.check_icon-invisible {
+    visibility: hidden;
+}
+
+.check_icons-visible {
+    visibility: visible;
+}
+
+.select_check:hover .check_icon-invisible {
+    visibility: visible;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.hide {
+    display: none;
+}
+
+.textLine {
+    text-decoration: line-through;
+}
+
